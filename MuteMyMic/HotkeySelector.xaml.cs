@@ -75,9 +75,9 @@ namespace MuteMyMic
 
                 if (!newHotkeys.Contains(key))
                     newHotkeys.Add(key);
-            }
 
-            HotkeyBox.Text = HotkeyUtility.FormatHotkeys(newHotkeys.ToArray());
+                HotkeyBox.Text = HotkeyUtility.FormatHotkeys(newHotkeys.ToArray());
+            }
         }
 
         private void OnMouseDown(object _, MouseEventArgs e)
@@ -89,9 +89,9 @@ namespace MuteMyMic
 
                 if (e.XButton2 == MouseButtonState.Pressed && !newHotkeys.Contains(0x06))
                     newHotkeys.Add(0x06);
-            }
 
-            HotkeyBox.Text = HotkeyUtility.FormatHotkeys(newHotkeys.ToArray());
+                HotkeyBox.Text = HotkeyUtility.FormatHotkeys(newHotkeys.ToArray());
+            }
         }
     }
 }
