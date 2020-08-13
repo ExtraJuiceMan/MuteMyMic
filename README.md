@@ -4,7 +4,7 @@ An application for muting your microphone until a set combination of keys is hel
 # Installation
 You must have the [.NET Core 3.1 Runtime](https://dotnet.microsoft.com/download/dotnet-core/3.1) installed on your PC to use this application.
 
-Download a build from the releases. Unzip it into a directory of your choice. Desktop/MuteMyMic or Program Files/MuteMyMic are good choices.
+Download a build from the [releases](https://github.com/ExtraConcentratedJuice/MuteMyMic/releases). Unzip it into a directory of your choice. Desktop/MuteMyMic or Program Files/MuteMyMic are good choices.
 
 Start the application through MuteMyMic.exe.
 
