@@ -133,6 +133,11 @@ namespace MuteMyMic
             }
         }
 
+        private void OnAboutButtonClick(object _, EventArgs e)
+        {
+            new About().ShowDialog();
+        }
+
         private void OnSetHotkeyButtonClicked(object _, EventArgs e)
         {
             var dialog = new HotkeySelector(keyCombo, hotkeys =>

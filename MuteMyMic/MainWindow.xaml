@@ -16,6 +16,7 @@
                 </ItemsPanelTemplate>
             </Menu.ItemsPanel>
             <MenuItem Header="File" Height="25">
+                <MenuItem Click="OnAboutButtonClick" Foreground="#000000" Header="About" Height="25"/>
                 <MenuItem Click="OnExitButtonClick" Foreground="#000000" Header="Exit" Height="25"/>
             </MenuItem>
             <MenuItem Header="Settings" Height="25">

@@ -7,7 +7,7 @@
     <ApplicationIcon>MuteMyMic.ico</ApplicationIcon>
     <Authors>ExtraConcentratedJuice</Authors>
     <Company>ExtraConcentratedJuice</Company>
-    <Description>An application for muting your mic globally until you press a button (push-to-talk).</Description>
+    <Description>An application for muting your microphone until a set combination of keys is held (push-to-talk).</Description>
     <PackageLicenseExpression></PackageLicenseExpression>
     <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
   </PropertyGroup>
