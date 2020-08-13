@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29709.97
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MuteMyMic", "MuteMyMic\MuteMyMic.csproj", "{DC626180-C133-46CD-8665-CA55967A0277}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DC626180-C133-46CD-8665-CA55967A0277}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC626180-C133-46CD-8665-CA55967A0277}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC626180-C133-46CD-8665-CA55967A0277}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC626180-C133-46CD-8665-CA55967A0277}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0820E847-FD41-427E-9913-2E46035BA5CA}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>MuteMyMic.ico</ApplicationIcon>
+    <Authors>ExtraConcentratedJuice</Authors>
+    <Company>ExtraConcentratedJuice</Company>
+    <Description>An application for muting your mic globally until you press a button (push-to-talk).</Description>
+    <PackageLicenseExpression></PackageLicenseExpression>
+    <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="MuteMyMic.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Hardcodet.NotifyIcon.Wpf" Version="1.0.8" />
+    <PackageReference Include="NAudio" Version="1.10.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="MuteMyMic.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="mute.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="unmute.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

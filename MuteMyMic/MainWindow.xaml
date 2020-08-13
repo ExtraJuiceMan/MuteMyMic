@@ -1,0 +1,50 @@
+﻿<Window x:Class="MuteMyMic.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MuteMyMic"
+        xmlns:tb="http://www.hardcodet.net/taskbar"
+        mc:Ignorable="d"
+        Title="MuteMyMic" Height="220" Width="360" Background="#2D2D30" ResizeMode="NoResize"
+        WindowStyle="None" Closing="OnExit">
+    <DockPanel LastChildFill="False">
+        <Menu Background="{x:Null}" x:Name="TopMenu" Height="25" DockPanel.Dock="Top" Foreground="#FFFFFF">
+            <Menu.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <DockPanel HorizontalAlignment="Stretch"/>
+                </ItemsPanelTemplate>
+            </Menu.ItemsPanel>
+            <MenuItem Header="File" Height="25">
+                <MenuItem Click="OnExitButtonClick" Foreground="#000000" Header="Exit" Height="25"/>
+            </MenuItem>
+            <MenuItem Header="Settings" Height="25">
+                <MenuItem Click="OnSetHotkeyButtonClicked" Foreground="#000000" Header="Set Hotkey" Height="25"/>
+                <MenuItem x:Name="PlaySoundsButton" Click="OnPlaySoundsButtonClicked" Foreground="#000000" Header="Play Sounds On Mute Toggle" Height="25"/>
+                <MenuItem x:Name="RunOnStartupButton" Click="OnRunOnStartupButtonClicked" Foreground="#000000" Header="Run On Startup" Height="25"/>
+            </MenuItem>
+            <MenuItem Header="Hide" HorizontalAlignment="Right" Foreground="White" Click="OnHideButtonClick"/>
+        </Menu>
+        <Grid DockPanel.Dock="Bottom">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Column="0" Foreground="#FFFFFF" Content="Input:" Margin="0,0,4,0"/>
+            <ComboBox x:Name="InputSelect" Grid.Column="1" Grid.ColumnSpan="2"></ComboBox>
+        </Grid>
+        <Label x:Name="MutedLabel" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Content="No Input" Width="360" Height="152" FontSize="48" Foreground="#FFB8B8B8"/>
+        <tb:TaskbarIcon x:Name="TrayIcon"
+                    Visibility="Hidden"
+                    MenuActivation="RightClick"
+                    IconSource="./MuteMyMic.ico">
+            <tb:TaskbarIcon.ContextMenu>
+                <ContextMenu>
+                    <MenuItem Header="Exit"
+                              Click="OnExitButtonClick">
+                    </MenuItem>
+                </ContextMenu>
+            </tb:TaskbarIcon.ContextMenu>
+        </tb:TaskbarIcon>
+    </DockPanel>
+</Window>
