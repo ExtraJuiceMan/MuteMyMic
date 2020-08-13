@@ -1,4 +1,4 @@
-![mutemymic](https://raw.githubusercontent.com/ExtraConcentratedJuice/MuteMyMic/master/app.PNG)
+![mutemymic](https://raw.githubusercontent.com/ExtraConcentratedJuice/MuteMyMic/master/application-sample.png)
 
 # MuteMyMic
 An application for muting your microphone until a set combination of keys is held (push-to-talk).
