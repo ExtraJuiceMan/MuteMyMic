@@ -1,14 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace MuteMyMic
 {
@@ -17,11 +10,11 @@ namespace MuteMyMic
     /// </summary>
     public partial class HotkeySelector : Window
     {
-        private Action<int[]> setHotkey;
-        private int[] currentHotkeys;
+        private readonly Action<int[]> setHotkey;
+        private readonly List<int> newHotkeys = new List<int>();
 
+        private int[] currentHotkeys;
         private bool recording = false;
-        private List<int> newHotkeys = new List<int>();
 
         public HotkeySelector(int[] currentHotkeys, Action<int[]> setHotkey)
         {
@@ -49,7 +42,7 @@ namespace MuteMyMic
             {
                 recording = true;
                 DoneButton.IsEnabled = false;
-                HotkeyBox.Text = "";
+                HotkeyBox.Text = String.Empty;
                 HotkeyBox.Focus();
             }
         }
