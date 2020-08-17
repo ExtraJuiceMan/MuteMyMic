@@ -13,7 +13,7 @@ Start the application through MuteMyMic.exe.
 # Usage
 You may set a key combination for unmute by clicking on Settings -> Set Hotkey.
 
-You may set a delay for unmute by clickong on Settings -> Set Unmute Delay. This feature is useful for making sure that you do not cut out too early on unmute.
+You may set a delay for unmute by clicking on Settings -> Set Unmute Delay. This feature is useful for making sure that you do not cut out too early on unmute.
 
 You may play a sound on unmute and mute by clicking on Settings -> Play Sounds On Mute Toggle.
 
