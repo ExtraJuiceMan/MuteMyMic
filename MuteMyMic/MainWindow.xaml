@@ -20,7 +20,8 @@
                 <MenuItem Click="OnExitButtonClick" Foreground="#000000" Header="Exit" Height="25"/>
             </MenuItem>
             <MenuItem Header="Settings" Height="25">
-                <MenuItem Click="OnSetHotkeyButtonClicked" Foreground="#000000" Header="Set Hotkey" Height="25"/>
+                <MenuItem x:Name="SetHotkeyButton" Click="OnSetHotkeyButtonClicked" Foreground="#000000" Header="Set Hotkey" Height="25"/>
+                <MenuItem x:Name="SetUnmuteDelayButton" Click="OnSetUnmuteDelayButtonClicked" Foreground="#000000" Header="Set Unmute Delay" Height="25"/>
                 <MenuItem x:Name="PlaySoundsButton" Click="OnPlaySoundsButtonClicked" Foreground="#000000" Header="Play Sounds On Mute Toggle" Height="25"/>
                 <MenuItem x:Name="RunOnStartupButton" Click="OnRunOnStartupButtonClicked" Foreground="#000000" Header="Run On Startup" Height="25"/>
             </MenuItem>
